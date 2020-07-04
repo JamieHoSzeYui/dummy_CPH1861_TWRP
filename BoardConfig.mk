@@ -165,3 +165,35 @@ TW_INCLUDE_CRYPTO := true
 
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+
+# SHRP BS
+# Path to SHRP tree
+SHRP_PATH := device/oppo/CPH1861
+# Maintainer name
+SHRP_MAINTAINER := henloboi
+# Device codename
+SHRP_DEVICE_CODE := CPH1861
+# put this 0 if device has no EDL mode
+SHRP_EDL_MODE := 1
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+# Put 0 to disable flashlight
+SHRP_FLASH := 1
+# Check your device's recovery path, dont use blindly
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+# Use this flag only if your device is A/B
+SHRP_AB := true
+# Recovery Type (It can be treble,normal,SAR) [Only for About Section]
+SHRP_REC_TYPE := Treble
+# Recovery Type (It can be A/B or A_only) [Only for About Section]
+SHRP_DEVICE_TYPE := A/B
+# SHRP Padding Flag (Only for rounded corner devices.)
+SHRP_STATUSBAR_RIGHT_PADDING := 13
+SHRP_STATUSBAR_LEFT_PADDING := 13
+# SHRP Express, enables on-the-fly theme patching (also persistent) + persistent lock
+SHRP_EXPRESS := true
+# SHRP Dark mode, use this flag to have dark theme set by default
+SHRP_DARK := true
+# Force mount system in /system despite SAR policy, useful for maintaining backwards compatibility and/or Samsung devices.
+SHRP_NO_SAR_AUTOMOUNT := true
